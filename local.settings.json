@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "databaseName": "Ratings",
+    "collectionName": "Orders",
+    "_ConnectionStringSetting": "AccountEndpoint=https://serverlessteam9.documents.azure.com:443/;AccountKey=Hvnvn4l7NRFi2tUe9H8SbhNg3UqahRPSj4DlJmFBHyG4hGaEE9ZambxIy1HqjNb8hXVSYQE3pJ955sZzplbvvA==;"
+  }
+}
