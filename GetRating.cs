@@ -16,7 +16,7 @@ namespace ServerlessTeam9FunctionApp
     {
         [FunctionName("GetRating")]
         public static IActionResult Run(
-       [HttpTrigger(AuthorizationLevel.Function, "get", Route = "rating/{ratingId}")] HttpRequest req,
+       [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "rating/{ratingId}")] HttpRequest req,
         [CosmosDB("%databaseName%", "%collectionName%", ConnectionStringSetting = "_ConnectionStringSetting",
         SqlQuery = "Select * from ratings r where r.id = {ratingId}")]IEnumerable<RatingModel> rating,
          ILogger log)
